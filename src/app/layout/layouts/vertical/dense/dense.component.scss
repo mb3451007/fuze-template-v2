@@ -1,0 +1,55 @@
+
+.components{
+    margin-top: 30px !important;
+    margin-left: 10px !important;
+}
+
+.header-height{
+    height: 55px !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.switch-mode .checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.list-items:hover svg path {
+    fill: #fff;
+}
+
+.switch-mode .checkbox-label {
+    border: 1px solid #f2f6fa;
+    background-color: transparent;
+    width: 96px;
+    height: 40px;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13px;
+}
+
+.switch-mode .checkbox-label .ball {
+    background-color: #f2f6fa;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 8px;
+    top: 2px;
+    border-radius: 12px;
+    transition: transform 0.2s linear;
+}
+
+.switch-mode .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(43px);
+}
+.background-items:hover{
+background-color: #02ab9d;
+color: white;
+}

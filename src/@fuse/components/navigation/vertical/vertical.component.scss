@@ -1,0 +1,17 @@
+@use 'styles/appearances/default';
+@use 'styles/appearances/compact';
+@use 'styles/appearances/dense';
+@use 'styles/appearances/thin';
+.fuse-vertical-navigation-wrapper{
+    background-color: white !important;
+    span {
+        color: gray !important;
+    }
+}
+.fuse-vertical-navigation-wrapper {
+    position: relative;
+}
+
+#toggleBtn {
+    z-index: 1000000000; /* Ensure it appears above other elements */
+}

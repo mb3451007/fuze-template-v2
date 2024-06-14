@@ -1,0 +1,191 @@
+<!-- Loading bar -->
+<fuse-loading-bar></fuse-loading-bar>
+
+<!-- Navigation -->
+<a id="toggleBtn" class="arrow-icon cursor-pointer bg-gray-1300 head-arrow rounded-full sm:w-[30px] w-[20px] sm:h-[30px] h-[20px] flex items-center justify-center absolute sm:-right-3.5 -right-2.5 sm:top-4 top-5" (click)="setHoverClass()">
+    <svg class="svg-arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/>
+    </svg>
+    <p>icon</p>
+</a>
+<fuse-vertical-navigation
+
+    class="dark bg-gray-900 print:hidden"
+    [appearance]="navigationAppearance"
+    [mode]="isScreenSmall ? 'over' : 'side'"
+    [name]="'mainNavigation'" 
+    [opened]="!isScreenSmall"
+    [navigation]="navigations">
+    <nav>
+        <ul>
+          <li *ngFor="let item of navigations" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: item.exactMatch}">
+            <a [routerLink]="item.link">{{ item.title }}</a>
+          </li>
+        </ul>
+      </nav>
+    <!-- Navigation header hook -->
+     <ng-container fuseVerticalNavigationContentHeader>
+        <!-- Logo -->
+        <div class="flex items-center justify-center h-20">
+            <img
+                class="w-8"
+                src="assets/images/logo-black.svg"
+                alt="Logo image">
+        </div>
+   
+
+    </ng-container>
+    
+</fuse-vertical-navigation>
+
+
+<!-- Wrapper -->
+<div class="flex flex-col flex-auto w-full min-w-0">
+
+    <!-- Header -->
+    <div class="relative header-height flex flex-0 items-center w-full h-16 px-4 md:px-6 z-49 shadow dark:shadow-none dark:border-b bg-card dark:bg-transparent print:hidden">
+        <div class="flex items-center pr-2 space-x-2">
+            <!-- Navigation toggle button -->
+            <button
+                mat-icon-button
+                (click)="toggleNavigation('mainNavigation')">
+                <mat-icon [svgIcon]="'heroicons_outline:bars-3'"></mat-icon>
+            </button>
+            <!-- Navigation appearance toggle button -->
+            <button
+                class="hidden md:inline-flex"
+                mat-icon-button
+                (click)="toggleNavigationAppearance()">
+                <mat-icon [svgIcon]="'heroicons_outline:arrows-right-left'"></mat-icon>
+            </button>
+        </div>
+        <!-- Components -->
+        <div class="flex items-center pl-2 ml-auto space-x-0.5 sm:space-x-2">
+            <div class="">
+                <div class="flex items-center justify-end bg-white py-2.5 px-4 fixed left-0 top-0 z-20 w-full top-bar">
+                    <ul class="flex items-center">
+                        <div class="relative">
+                            <button id="dropdownDefaultButtonlan" data-dropdown-toggle="dropdownlan"
+                                class="border border-solid sm:h-10 h-[30px] md:w-[168px] sm:w-[130px] w-[60px] px-2.5 border-gray-1300 focus:ring-0 focus:outline-none focus:ring-transparent text-black-1200 font-medium font-Ubuntu sm:rounded-xl rounded-lg md:text-base text-sm text-center justify-between flex items-center"
+                                type="button" (click)="toggleDropdown('dropdownlan')">
+                                <span class="flex items-center">
+                                    <img src="assets/images/italian-flag.png" alt=""
+                                        class="md:h-auto sm:h-6 h-5 md:mr-3 sm:mr-2 m-0" />
+                                    <p class="sm:block hidden">Italiano</p>
+                                </span>
+                                <svg class="sm:w-2.5 w-2 sm:h-2.5 h-2 sm:ms-3 ms-1.6" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <!-- Dropdown menu -->
+                            <div id="dropdownlan"
+                                class="absolute top-full left-0 mt-3 z-20 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownDefaultButtonlan">
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center sm:justify-start justify-center px-2.5 font-normal font-Ubuntu md:text-base text-sm">
+                                            <span class="flex items-center md:mr-3 sm:mr-2 m-0">
+                                                <img src="assets/images/united-kingdom.png" alt=""
+                                                    class="md:h-8 sm:h-6 h-5" />
+                                            </span>
+                                            <p class="sm:block hidden">English</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <li class="md:ml-6 ml-2.5 flex items-center">
+                <div class="switch-mode d-flex">
+                    <input type="checkbox" class="checkbox" id="checkbox" (change)="toggleDarkMode($event)" [checked]="isDarkModeOn">
+                    <label for="checkbox" class="checkbox-label d-flex">
+                        <span class="relative z-50">
+                            <img src="assets/images/sun-icon.svg" alt="" />
+                        </span>
+                        <span class="relative z-50">
+                            <img src="assets/images/moon-icon.svg" alt="" />
+                        </span>
+                        <span class="ball"></span>
+                    </label>
+                </div>
+            </li>
+            
+            
+            
+                        <li class="md:ml-6 ml-2.5"><a href="#"
+                                class="border border-solid border-gray-1300 md:w-10 w-[30px] md:h-10 h-[30px] md:p-0 p-1 flex items-center justify-center md:rounded-xl rounded-lg"><img
+                                    src="assets/images/notification-icon.svg" alt="notification icon"
+                                    style="height: 25px !important;width: 25px !important;" /></a></li>
+            
+                        <li class="md:ml-6 ml-2.5"><a href="#"
+                                class="border border-solid border-gray-1300 md:w-10 w-[30px] md:h-10 h-[30px] md:p-0 p-1.5 flex items-center justify-center md:rounded-xl rounded-lg"><img
+                                    src="assets/images/setting-icon.svg" alt=""
+                                    style="height: 25px !important;width: 25px !important;" /></a></li>
+            
+                        <li class="md:ml-6 ml-2.5 relative">
+                            <a id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                                class="border border-solid border-gray-1300 md:w-10 w-[30px] md:h-10 h-[30px] md:p-0 p-2 flex items-center justify-center md:rounded-xl rounded-lg"
+                                (click)="toggleDropdown('dropdown')">
+                                <img src="assets/images/user-icon.svg" alt=""
+                                    style="height: 25px !important;width: 25px !important;" />
+                            </a>
+                            <div id="dropdown"
+                                class="absolute right-0 mt-3 z-10 hidden bg-white divide-y py-2.5 rounded-lg shadow-3xl border border-gray-500/[20%] w-[200px] dark:bg-gray-700">
+                                <ul class="text-sm text-gray-700 dark:text-gray-200"
+                                    aria-labelledby="dropdownDefaultButton">
+                                    <li>
+                                        <a href="profile.html"
+                                            class="flex items-center background-items mb-[2px] list-items text-gray-1800 py-2 hover:bg-sea-green-1100 hover:text-white px-3 text-sm font-Ubuntu font-medium">
+                                            <svg class="mr-3" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+            
+                                            </svg>
+                                            Profilo utente
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center background-items mb-[2px] list-items text-gray-1800 hover:bg-sea-green-1100 hover:text-white py-2 px-3 text-sm font-Ubuntu font-medium">
+                                            <svg class="mr-3" width="15" height="18" viewBox="0 0 15 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                            </svg>
+                                            Termini e condizioni
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html"
+                                            class="flex items-center list-items background-items text-gray-1800 hover:bg-sea-green-1100 hover:text-white py-2 px-3 text-sm font-Ubuntu font-medium">
+                                            <svg class="mr-3" width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+            
+                                            </svg>
+                                            Esci
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+    <!-- Content -->
+    <div class="flex flex-col flex-auto components overflow-auto mt-300">
+        <!-- *ngIf="true" hack is required here for router-outlet to work correctly.
+             Otherwise, layout changes won't be registered and the view won't be updated! -->
+        <router-outlet *ngIf="true"></router-outlet>
+    </div>
+
+    <!-- Footer -->
+    <!-- <div class="relative flex flex-0 items-center justify-start w-full h-14 px-4 md:px-6 z-49 border-t bg-card dark:bg-transparent print:hidden">
+        <span class="font-medium text-secondary">Fuse &copy; {{currentYear}}</span>
+    </div> -->
+
+
+
+<!-- Quick chat -->
+<!-- <quick-chat #quickChat="quickChat"></quick-chat> -->

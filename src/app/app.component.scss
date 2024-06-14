@@ -1,0 +1,100 @@
+// :host {
+//     display: flex;
+//     flex: 1 1 auto;
+//     width: 100%;
+//     height: 100%;
+// }
+
+//   .container {
+//    /* display: flex; */
+//     width: 100%;
+//   }
+  
+//   .sidebar {
+//     flex: 0 0 16%; 
+//     transition: flex-basis 0.3s ease; 
+//   }
+  
+//   .main-content-p {
+//   padding-left: 8em !important;
+//   }
+  
+//   .main-content-q {
+//   padding-left: 15em !important;
+//   }
+  
+//   .main-content {
+//     /* padding-left: 15em; */
+//     flex: 1;
+//     height: 100% !important; 
+//     width: 100% !important; 
+//     flex-grow: 1;
+//     /* padding-top: 6em; */
+//     padding-top: 94px !important;
+//     padding-left: 230px !important;
+    
+//   }
+  
+//   .sidebar.collapsed {
+//     flex-basis: 0; 
+//   }
+  
+  
+//   .fullscreen .sidebar {
+//     display: none;
+//   }
+  
+//   .fullscreen .main-content {
+//     width: 100%;
+//   }
+  
+//   @media (min-width: 768px) and (max-width: 1199px) {
+//     .main-content {
+//       padding-left: 5%;
+//     }
+  
+//   }
+  
+//   ::ng-deep{
+//     ejs-spreadsheet {
+//       span {
+//         color: rgba(0, 0, 0, 0.54) !important;
+//       }
+//     }
+//     .light-mode{
+//       background-color: rgb(232 236 240 / 0.5) !important;
+//       .sidebar{
+//             background-color: white !important;
+//         }
+       
+//     }
+//   }
+//   ejs-spreadsheet {
+//     span {
+//       color: rgba(0, 0, 0, 0.54) !important;
+//     }
+//     td {
+//       color: #424242 !important;
+  
+//     }
+//   }
+//   .logo-div {
+//       svg {
+//           path {
+//               fill: #fff !important;
+//           }
+//       }
+//   }
+//   .sidebar {
+//     svg {
+//       path {
+//           stroke: #fff !important;
+//           stroke-opacity: 1 !important;
+//       }
+//       g {
+//           opacity: 1 !important;
+//       }
+//     }
+//   }
+  
+  

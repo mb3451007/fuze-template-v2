@@ -1,0 +1,111 @@
+ejs-spreadsheet {
+    padding-right: 1.3em;
+}
+::ng-deep {
+
+    .e-tab-header {
+        display :none !important
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+    .e-spreadsheet .e-column-header{
+        left: 50px !important;
+
+    }
+    .e-spreadsheet .e-sheet-content
+    {
+        left: 50px !important;
+    }
+
+    .e-spreadsheet .e-row-header{
+        width: 50px !important;
+        z-index: 1;
+    }
+    .e-table .e-rowhdr-table{
+    //    height: 50px !important;
+       width: 100px !important;
+    }
+    .e-header-cell {
+        background-color:#E2E2E2 !important;
+        border: 1px solid  #141313;
+    }
+    .e-spreadsheet .e-row-header .e-highlight .e-header-cell, .e-spreadsheet .e-row-header .e-header-cell.e-highlight, .e-spreadsheet .e-select-all-cell.e-prev-highlight-bottom, .e-spreadsheet .e-row-header .e-table tr.e-hide-end.e-prev-highlight .e-header-cell::before, .e-spreadsheet .e-row-header .e-table tr.e-hide-end .e-header-cell.e-highlight::before {
+        // border-bottom-color: #20C9BB;
+        background-color: #20C9BB !important;
+        
+    }
+    .e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-selectall {
+        background-color:#E2E2E2 !important;
+        border: 1px solid  #B9B9B9;
+        width: 50px !important;
+        
+    }
+    // .e-spreadsheet .e-row-header .e-table tr .e-header-cell.e-rowresize{
+    //     border: ipx solid black !important;
+    //     left: 50px !important;
+    // }
+    .e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-row-header .e-header-cell, .e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-select-all-cell, .e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-selectall-container tbody .e-header-cell {
+        border-top: 1px solid #B9B9B9 !important;
+        
+    }
+    .e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-selectall.e-highlight {
+        background-color:#20C9BB !important ;
+        border-right: 1px solid #B9B9B9 !important;
+        width: 50px !important;
+        
+    }
+    .e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-select-all-cell{
+        width: 50px !important;
+    }
+    .e-spreadsheet .e-sheet-panel:not(.e-rtl) .e-header-panel thead .e-header-cell{
+        border-right: 1px solid #B9B9B9 !important;
+    }
+    .new-add-button img{
+        background-color: #20C9BB;
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+        border-radius: 5px;
+    }
+    .new-save-button img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .full-screen-button{
+        width: 27px;
+        height: 27px;
+    }
+
+    .btn-hvr:hover {
+        background: rgba(0, 0, 0, 0.12);
+    }
+
+   
+    // jjjj
+    .save-with-icon {
+        position: relative; /* Ensure the button is positioned relative */
+      }
+      
+      .icon-wrapper {
+        position: relative; 
+        display: inline-block; 
+      }
+      
+      .saveImage {
+        display: block; 
+        width:20px !important;
+      }
+      
+      .plusImage {
+        position: absolute; 
+        top: -30px; 
+        right: 0; 
+        width: 20px; 
+        height: 20px; 
+      }
+      
+
+}

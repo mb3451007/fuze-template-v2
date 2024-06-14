@@ -1,0 +1,240 @@
+
+.flex {
+   
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+.dashboard{
+    background-color: #f3f5f7,
+}
+
+.dashboard-right[_ngcontent-ng-c444775246] {
+    padding-right: 1.3em;
+}
+.pb-10 {
+    padding-bottom: 2.5rem;
+}
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: blue;
+}
+.lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+    .sm\:px-5 {
+        margin-top: 30px !important;
+    } 
+    .sm\:px-5 {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    // 
+    .progetto{
+        background-color: #e8f9f8;
+        color: #20c9bb;
+    }
+    .nuovo{
+        background-color: #f6f6f6;
+        color: #aaaab1;
+    }
+    .file{
+        background-color: #f8fafc;
+    }
+    .bg-gray-3000 {
+        background-color: #e8ecf080;
+        /* background-color: red !important; */
+    }
+    .video-thumbnail{
+        background-color: #f3f5f7;
+    }
+    .guarda {
+        // background-color: #31363f !important;
+        color: #fdc13f;
+        border: #fdc13f;
+    }
+    .guarda:hover {
+        background-color: #fdc13f !important;
+        color: white;
+    }
+    .scopi {
+        min-width:110px !important;
+       border: red;
+       color: red;
+    }
+    .scopi:hover {
+        background-color: red !important;
+        color: white;
+    }
+    .Fatturato{
+        color: #a0005e;
+        background-color: #f5e5ef;
+    }
+    .Marketing{
+        color: #fcb63f;
+        background-color: #fff7eb;
+    }
+    .Prodotto{
+        color: #20c9c1;
+        background-color: #e8f9f8;
+    }
+    .Vendite{
+        color:#ec1d22;
+        background-color: #fde8e8;
+    }
+    .date-color{
+        color: #aaaaaa;
+       font-family: 2px !important;
+    }
+    .text-bg{
+        background-color:#f6f6f6;
+        border-radius: 40%;
+    }
+    .novita{
+        color: black;
+        justify-content: space-between !important;
+        margin-left: -15px;
+    }
+    .text-green-1200{
+        color: green;
+    }
+    .sm\:px-5{
+        color: black !important;
+    }
+    .Invita{
+        background-color: #8cc540;
+        border: #8cc540;
+        color: white;
+    }
+    .Invita:hover{
+    background-color: white;
+    color: #8cc540 !important;
+    }
+    // .Invita svg:hover{
+    //     background-color: #8cc540;
+    //    }
+
+   .Seleziona{
+    background-color:#20c9bb;
+    border: 30%;
+   }
+   .Seleziona:hover{
+    background-color:#9f005d;
+    border: 30%;
+   }
+//    Dark Example 
+// .dark .dashboard{
+//     background-color: rgb(61,65,74) !important;
+// }
+// .dark .nuovo {
+//     background-color: rgb(61,65,74) !important;
+// }
+// .dark .dashboard-right {
+//     background-color: rgb(34, 40, 49) !important;
+// }
+// .dark .main-content {
+//     background-color: rgb(34, 40, 49) !important;
+// }
+// .dark .dialog-main-div {
+//     background-color: #222831 !important;
+// }
+// .dark .text-gray-1200 {
+//     background-color: #222831;
+// }
+// .dark .sm\:flex-nowrap {
+//     background-color: #222831;
+// }
+// .dark .md\:text-base {
+//     border: 1px solid gray;
+// }
+// .dark.md\:p-0 {
+//     border: 1px solid gray;
+// }
+// .dark.sm\:py-\[29px\] {
+//     background-color: #31363f !important;
+// }
+// .dark .fare-con {
+//     background-color: #31363f !important;
+// }
+// .dark .guarda {
+//     background-color: #31363f !important;
+// }
+// .dark .guarda:hover {
+//     background-color: rgb(251 175 63 / var(--tw-text-opacity)) !important;
+// }
+// .dark .novita {
+//     background-color: #31363f !important;
+// }
+// .dark .scopi {
+//     background-color: #31363f !important;
+// }
+// .dark .scopi:hover {
+//     background-color: red !important;
+// }
+// .dark .utenti {
+//     background-color: #31363f !important;
+// }
+// .dark .importa {
+//     background-color: #222831 !important;
+// }
+// .dark .file {
+//     background-color: #222831;
+//     color: white !important;
+// }
+// #default-tab [aria-selected="false"] {
+//     color: white !important;
+// }
+// .dark.border-gray-1400 {
+//     border-color: #737374 !important;
+// }
+
+// .dark.sm\:px-5 {
+//     background-color: #31363f !important;
+// }
+// .dark.switch-mode .checkbox-label {
+//     border: 1px solid gray;
+// }
+// .dark.sidebar {
+//     background-color: #31363f !important;
+// }
+// .dark.top-bar {
+//     background-color: #31363f !important;
+// }
+// .dark.arrow-icon {
+//     background-color: #222831 !important;
+// }
+// .dark.arrow-icon svg {
+//     path {
+//         fill: #fff !important;
+//         stroke: #fff !important;
+//         stroke-opacity: 1 !important;
+//     }
+// }
+// .dark{
+// .arrow-icon svg {
+//     path {
+//         fill: #fff !important;
+//         stroke: #fff !important;
+//         stroke-opacity: 1 !important;
+//     }
+// }
+// }
+/* .dark.h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td,
+span,
+.text-black-1200 {
+    color: #eeeeee !important;
+} */
