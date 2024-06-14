@@ -184,7 +184,7 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         this._enableAnimations();
 
         // Set the hovered
-        this._hovered = true;
+        // this._hovered = true;
     }
     setHoverClass(){
         this._hovered = ! this._hovered
@@ -202,7 +202,7 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         this._enableAnimations();
 
         // Set the hovered
-        this._hovered = false;
+        // this._hovered = false;
     }
 
     // -----------------------------------------------------------------------------------------------------
