@@ -687,6 +687,7 @@ fuse-vertical-navigation-group-item {
 }
 .dark .importa {
     background-color: #222831 !important;
+    --tw-border-opacity: 1 !important;
 }
 .dark .file {
     background-color: #222831;
@@ -797,10 +798,17 @@ fuse-vertical-navigation-group-item {
 .dark .top-bar{
     background-color: #31363f !important;
 }
-// .dark .fuse-vertical-navigation-wrapper{
-//     background-color: #31363f !important;
-//     color: white !important;
+
+// .dark .fuse-vertical-navigation-wrapper {
+
 // }
-// .dark .svg-arrow-icon{
-// background-color: #222831 !important;
-// }
+.dark .fuse-vertical-navigation-wrapper{
+    background-color: #31363f !important;
+    color: white !important;
+}
+.dark .svg-arrow-icon{
+background-color: #222831 !important;
+    path {
+        fill: white;
+    }
+}

@@ -17,16 +17,37 @@
     z-index: 10000000000000; 
     background-color: #f2f6fa !important;
     position: absolute !important;
-    right: 0;
     top: 20 !important;
     margin-top: 40px;
+    right: -16px;
     border-radius: 50% !important;
     width: 30px;
     height: 30px;
     padding: 7px;
+    animation: slideLeft 0.29s forwards;
+    cursor: pointer;
     // margin-right: -15px;
     // margin-left: 60px;
 }
 .fuse-vertical-navigation-hover .svg-arrow-icon  {
     rotate: 180deg !important;
+    animation: slideRight 0.29s forwards;
+}
+
+@keyframes slideRight {
+    from {
+      right: -16px;
+    }
+    to {
+      right: -135px;
+    }
+  }
+
+@keyframes slideLeft {
+from {
+    right: -135px;
+}
+to {
+    right: -16px;
+}
 }

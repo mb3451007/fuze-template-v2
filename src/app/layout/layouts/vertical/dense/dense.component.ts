@@ -135,6 +135,7 @@ export class DenseLayoutComponent implements OnInit, OnDestroy
     {
         return new Date().getFullYear();
     }
+    toggleSideNav: boolean = true;
 
     // -----------------------------------------------------------------------------------------------------
     // @ Lifecycle hooks
@@ -145,6 +146,10 @@ export class DenseLayoutComponent implements OnInit, OnDestroy
      */
     ngOnInit(): void
     {
+        this._fuseNavigationService.toggle.subscribe(d => {
+            this.toggleSideNav = d;
+            console.log ('ddddddddddd', d)
+        })
         // Subscribe to navigation data
         this._navigationService.navigation$
             .pipe(takeUntil(this._unsubscribeAll))

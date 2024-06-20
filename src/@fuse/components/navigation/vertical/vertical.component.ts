@@ -59,7 +59,7 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
     private _asideOverlay: HTMLElement;
     private readonly _handleAsideOverlayClick: any;
     private readonly _handleOverlayClick: any;
-    private _hovered: boolean = false;
+    private _hovered: boolean = true;
     private _mutationObserver: MutationObserver;
     private _overlay: HTMLElement;
     private _player: AnimationPlayer;
@@ -188,6 +188,7 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
     }
     setHoverClass(){
         this._hovered = ! this._hovered
+        this._fuseNavigationService.toggle.next(this._hovered)
     }
 
     /**

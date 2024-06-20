@@ -5,7 +5,7 @@
 
 <fuse-vertical-navigation
 
-    class="dark bg-gray-900 print:hidden"
+    class=" bg-gray-900 print:hidden"
     [appearance]="navigationAppearance"
     [mode]="isScreenSmall ? 'over' : 'side'"
     [name]="'mainNavigation'" 
@@ -35,7 +35,7 @@
 
 
 <!-- Wrapper -->
-<div class="flex flex-col flex-auto w-full min-w-0">
+<div class="flex flex-col flex-auto w-full min-w-0" [ngClass]="{'w-100-px': toggleSideNav}">
 
     <!-- Header -->
     <div class="relative header-height  flex flex-0 items-center w-full h-16 px-4 md:px-6 z-49 shadow dark:shadow-none dark:border-b bg-card dark:bg-transparent print:hidden">
@@ -81,7 +81,7 @@
                                     aria-labelledby="dropdownDefaultButtonlan">
                                     <li>
                                         <a href="#"
-                                            class="flex items-center sm:justify-start justify-center px-2.5 font-normal font-Ubuntu md:text-base text-sm">
+                                            class="flex items-center sm:justify-start justify-center px-2.5 font-normal font-Ubuntu text-sm">
                                             <span class="flex items-center md:mr-3 sm:mr-2 m-0">
                                                 <img src="assets/images/united-kingdom.png" alt=""
                                                     class="md:h-8 sm:h-6 h-5" />
