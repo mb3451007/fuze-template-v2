@@ -57,3 +57,13 @@ color: white;
 .w-100-px {
     margin-left: 100px !important;
 }
+.logo-full,
+.logo-collapsed {
+    transition: opacity 0.3s ease;
+}
+
+.logo-full.hidden,
+.logo-collapsed.hidden {
+    opacity: 0;
+    visibility: hidden;
+}

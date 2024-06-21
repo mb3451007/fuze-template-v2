@@ -51,3 +51,73 @@ to {
     right: -16px;
 }
 }
+.logo-collapsed{
+    height: 40px !important;
+    margin-top: 20px;
+    fill: white;
+}
+.logo-full{
+    height: 40px !important;
+    margin-top: 20px;
+    fill: white;
+}
+
+// ijifuidfiu
+.sidebar.active .navigation span {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar.active .sidbar-member {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sidebar.active .sidbar-member .sidbar-member-inner {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.bg-purple-1100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(160 0 94 / var(--tw-bg-opacity));
+}
+
+.bg-purple-1100\/\[0\.10\] {
+    background-color: rgb(160 0 94 / 0.1);
+}
+
+.bg-purple-1100\/\[0\.1\] {
+    background-color: rgb(160 0 94 / 0.1);
+}
+.hover\:bg-purple-1100:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(160 0 94 / var(--tw-bg-opacity));
+}
+.text-purple-1100 {
+    --tw-text-opacity: 1;
+    color: rgb(160 0 94 / var(--tw-text-opacity));
+}
+.hover\:text-purple-1100:hover {
+    --tw-text-opacity: 1;
+    color: rgb(160 0 94 / var(--tw-text-opacity));
+}
+.text-purple-1100{
+    color: white ;
+    text-align: center;
+    background-color: #31363f !important;
+    width: 100px !important;
+}
+.sidbar-member-inner {
+    padding: 1rem; 
+}
+.sidbar-member-inner h4 {
+    margin-bottom: 0.75rem; 
+}
+.sidbar-member-inner a {
+    font-size: 10px; 
+    height: 30px; 
+    max-width: 120px;
+    padding: 0 10px; 
+}

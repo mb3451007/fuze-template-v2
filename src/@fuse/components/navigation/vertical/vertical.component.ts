@@ -14,6 +14,7 @@ import { FuseVerticalNavigationDividerItemComponent } from '@fuse/components/nav
 import { FuseVerticalNavigationGroupItemComponent } from '@fuse/components/navigation/vertical/components/group/group.component';
 import { FuseVerticalNavigationSpacerItemComponent } from '@fuse/components/navigation/vertical/components/spacer/spacer.component';
 import { FuseScrollbarDirective } from '@fuse/directives/scrollbar/scrollbar.directive';
+import { FuseConfigService } from '@fuse/services/config';
 import { FuseUtilsService } from '@fuse/services/utils/utils.service';
 import { delay, filter, merge, ReplaySubject, Subject, Subscription, takeUntil } from 'rxjs';
 
@@ -59,7 +60,7 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
     private _asideOverlay: HTMLElement;
     private readonly _handleAsideOverlayClick: any;
     private readonly _handleOverlayClick: any;
-    private _hovered: boolean = true;
+    public _hovered: boolean = true;
     private _mutationObserver: MutationObserver;
     private _overlay: HTMLElement;
     private _player: AnimationPlayer;
@@ -81,6 +82,8 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         private _scrollStrategyOptions: ScrollStrategyOptions,
         private _fuseNavigationService: FuseNavigationService,
         private _fuseUtilsService: FuseUtilsService,
+        private _fuseConfigService: FuseConfigService,
+        private router: Router,
     )
     {
         this._handleAsideOverlayClick = (): void =>
@@ -190,6 +193,9 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         this._hovered = ! this._hovered
         this._fuseNavigationService.toggle.next(this._hovered)
     }
+
+
+    
 
     /**
      * On mouseleave
@@ -798,4 +804,33 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
         // Execute the observable
         this.openedChanged.next(open);
     }
+
+
+       // LayOut 
+       layoutType = 'classic';
+       setLayout(): void
+       {
+           if (this.layoutType=== 'classic')
+               this.layoutType = 'dense';
+           else
+               this.layoutType = 'classic';
+   
+           const layout = this.layoutType;
+           console.log("inside layout", layout);
+           
+           // Clear the 'layout' query param to allow layout changes
+           this.router.navigate([], {
+               queryParams        : {
+                   layout: null,
+               },
+               queryParamsHandling: 'merge',
+           }).then(() =>
+           {
+               // Set the config
+               this._fuseConfigService.config = {layout};
+               console.log(layout, "this is latest layout");
+               
+               
+           });
+       }
 }

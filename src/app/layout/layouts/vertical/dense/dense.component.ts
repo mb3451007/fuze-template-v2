@@ -30,6 +30,7 @@ import { Subject, takeUntil } from 'rxjs';
 })
 export class DenseLayoutComponent implements OnInit, OnDestroy
 {
+    isHovered = false;
     isScreenSmall: boolean;
     navigation: Navigation;
     navigationAppearance: 'default' | 'dense' = 'dense';
@@ -573,4 +574,6 @@ this._fuseNavigationService.storeNavigation('mainNavigation', this.navigations);
             navigation.nativeElement.classList.toggle('fuse-vertical-navigation-hover');
         }
     }
+    setLayouts(){
+        this.isHovered=! this.isHovered;    }
 }
