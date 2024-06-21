@@ -95,10 +95,7 @@ to {
     --tw-bg-opacity: 1;
     background-color: rgb(160 0 94 / var(--tw-bg-opacity));
 }
-.text-purple-1100 {
-    --tw-text-opacity: 1;
-    color: rgb(160 0 94 / var(--tw-text-opacity));
-}
+
 .hover\:text-purple-1100:hover {
     --tw-text-opacity: 1;
     color: rgb(160 0 94 / var(--tw-text-opacity));
@@ -107,7 +104,7 @@ to {
     color: #a0005e ;
     text-align: center;
     background-color: white !important;
-    width: 100px !important;
+    // width: 100px !important;
 }
 .sidbar-member-inner {
     padding: 1rem; 
@@ -121,3 +118,24 @@ to {
     max-width: 120px;
     padding: 0 10px; 
 }
+.notCollapsed{    /* Add your styles for collapsed state */
+    width: initial; /* or some default width */
+    margin-left: initial;
+    margin-right: initial;
+  }
+  
+  .collapsed {
+    /* Add your styles for notCollapsed state */
+   
+    margin-left: -20px !important;
+    margin-right: -20px !important;
+    .text-purple-1100{
+        // margin-left: -7px !important;
+        font-size: 10px !important;
+        width: 70px !important ;
+   
+    }
+  }  
+  .sidbar-member-collapsed{
+    padding:0px !important;
+  }

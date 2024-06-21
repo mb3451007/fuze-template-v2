@@ -833,4 +833,5 @@ export class FuseVerticalNavigationComponent implements OnChanges, OnInit, After
                
            });
        }
+       
 }

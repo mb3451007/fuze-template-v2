@@ -141,22 +141,30 @@
         </ng-container>
  
         <!-- Content footer -->
-        <div class="fuse-vertical-navigation-content-footer">
-            <ng-content select="[fuseVerticalNavigationContentFooter]"></ng-content>
+        <div class="xl:p-5 md:p-3 p-0 sidbar-member mt-12" *ngIf="_hovered">
+            <div class="bg-purple-1100 md:rounded-2xl rounded-xl md:py-4 py-2.5 md:px-2.5 px-1 sidbar-member-inner">
+                <h4 class="text-white font-bold md:mb-3 mb-1.5 font-Ubuntu sm:text-base text-xs leading-[120%] text-center">
+                    Free <br> Member
+                </h4>
+                <a href="#"
+                    class="text-purple-1100 font-Ubuntu font-bold md:text-sm sm:text-[10px] text-[8px] flex items-center justify-center bg-white sm:rounded-[10px] rounded-sm sm:h-[30px] h-[22px] max-w-[120px] w-full mx-auto">Passa a pro</a>
+            </div>
+        </div>
+
+        <div class="xl:p-5 md:p-3 p-0 sidbar-member-collapsed mt-12" *ngIf="!_hovered">
+            <div class="bg-purple-1100 md:rounded-2xl rounded-xl md:py-4 py-2.5 md:px-2.5 px-1 sidbar-member-inner">
+                <h4 class="text-white font-bold md:mb-3 mb-1.5 font-Ubuntu sm:text-base text-xs leading-[120%] text-center">
+                    Free <br> Member
+                </h4>
+                <a href="#"
+                    class="text-purple-1100 font-Ubuntu font-bold md:text-sm sm:text-[10px] text-[8px] flex items-center justify-center bg-white sm:rounded-[10px] rounded-sm sm:h-[30px] h-[22px] max-w-[120px] w-full mx-auto">Passa a pro</a>
+            </div>
         </div>
 
     </div>
 
     <!-- Footer -->
-    <div class="xl:p-5 md:p-3 p-0 sidbar-member mt-12">
-        <div class="bg-purple-1100 md:rounded-2xl rounded-xl md:py-4 py-2.5 md:px-2.5 px-1 sidbar-member-inner">
-            <h4 class="text-white font-bold md:mb-3 mb-1.5 font-Ubuntu sm:text-base text-xs leading-[120%] text-center">
-                Free <br> Member
-            </h4>
-            <a href="#"
-                class="text-purple-1100 font-Ubuntu font-bold md:text-sm sm:text-[10px] text-[8px] flex items-center justify-center bg-white sm:rounded-[10px] rounded-sm sm:h-[30px] h-[22px] max-w-[120px] w-full mx-auto">Passa a pro</a>
-        </div>
-    </div>
+   
 
 </div>
 
