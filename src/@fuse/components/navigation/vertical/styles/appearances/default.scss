@@ -295,6 +295,7 @@ fuse-vertical-navigation {
                     }
                 
                 }
+                
             }
         }
     }
@@ -823,4 +824,18 @@ background-color: #222831 !important;
 }
 .dark .text-purple-1100 {
     color: #fff;
+}
+
+.dark 
+.fuse-vertical-navigation-item-icon  svg path{
+    color: white !important;
+    // fill:  #31363f !important;
+    fill:  transparent !important;
+    stroke: white !important;
+}
+.dark .text-purple-1100{
+    color: white ;
+    text-align: center;
+    background-color: #31363f !important;
+    width: 100px !important;
 }
