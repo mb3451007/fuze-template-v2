@@ -4,8 +4,8 @@
 <div class="fuse-vertical-navigation-wrapper">
     <ng-container fuseVerticalNavigationContentHeader>
         <!-- Logo -->
-        <div 
-            class="flex items-center justify-center h-20 relative">
+        <div class="logo-main-div"><div 
+            class="flex items-center justify-center h-20 relative w-50" [class.w-30]="!_hovered">
             <!-- Full Logo -->
             <svg  *ngIf="_hovered"
                 class="logo-full absolute top-0 left-0 w-full h-full"
@@ -55,7 +55,7 @@
                 d="M6.79389 25.9812H0C0.744275 24.6128 1.58397 23.2069 2.51908 21.7822L6.79389 25.9812Z"
                 fill="#00AB9D"></path>
             </svg>
-        </div>
+        </div></div>
     </ng-container>
     <!-- Header -->
     <div class="fuse-vertical-navigation-header" >
@@ -141,7 +141,7 @@
         </ng-container>
  
         <!-- Content footer -->
-        <div class="xl:p-5 md:p-3 p-0 sidbar-member mt-12" *ngIf="_hovered">
+        <div class="xl:p-5 md:p-3 p-0 sidbar-member" *ngIf="_hovered">
             <div class="bg-purple-1100 md:rounded-2xl rounded-xl md:py-4 py-2.5 md:px-2.5 px-1 sidbar-member-inner">
                 <h4 class="text-white font-bold md:mb-3 mb-1.5 font-Ubuntu sm:text-base text-xs leading-[120%] text-center">
                     Free <br> Member
@@ -151,7 +151,7 @@
             </div>
         </div>
 
-        <div class="xl:p-5 md:p-3 p-0 sidbar-member-collapsed mt-12" *ngIf="!_hovered">
+        <div class="xl:p-5 md:p-3 p-0 sidbar-member-collapsed" *ngIf="!_hovered">
             <div class="bg-purple-1100 md:rounded-2xl rounded-xl md:py-4 py-2.5 md:px-2.5 px-1 sidbar-member-inner">
                 <h4 class="text-white font-bold md:mb-3 mb-1.5 font-Ubuntu sm:text-base text-xs leading-[120%] text-center">
                     Free <br> Member

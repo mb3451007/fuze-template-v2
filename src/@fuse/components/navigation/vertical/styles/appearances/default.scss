@@ -800,9 +800,15 @@ fuse-vertical-navigation-group-item {
     background-color: #31363f !important;
 }
 
-// .dark .fuse-vertical-navigation-wrapper {
+.dark .fuse-vertical-navigation-item-wrapper {
+    span{
+        color: white !important;
+    }
+    .fuse-vertical-navigation-item-title {
+        opacity: 1 !important;
+    }
+}
 
-// }
 .dark .fuse-vertical-navigation-wrapper{
     background-color: #31363f !important;
     color: white !important;

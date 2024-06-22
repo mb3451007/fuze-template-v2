@@ -2,8 +2,8 @@
 .flex {
    
     display: flex;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    // padding-left: 1rem;
+    // padding-right: 1rem;
 
 }
 .dashboard{
@@ -30,7 +30,7 @@
     padding-right: 1rem;
 }
     .sm\:px-5 {
-        margin-top: 30px !important;
+        // margin-top: 30px !important;
     } 
     .sm\:px-5 {
         padding-left: 1.25rem;
@@ -43,20 +43,19 @@
     }
     .nuovo{
         background-color: #f6f6f6;
-        color: #EEEEEE;
+        color: rgb(170, 170, 170, 1);
     }
     .file{
         background-color: #f8fafc;
     }
     .bg-gray-3000 {
         background-color: #e8ecf080;
-        /* background-color: red !important; */
+        width: 100%;
     }
     .video-thumbnail{
         background-color: #f3f5f7;
     }
     .guarda {
-        // background-color: #31363f !important;
         color: #fdc13f;
         border: #fdc13f;
     }

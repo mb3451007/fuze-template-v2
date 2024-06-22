@@ -1,7 +1,7 @@
 
 .components{
     margin-top: 30px !important;
-    margin-left: 10px !important;
+    // margin-left: 10px !important;
 }
 
 .header-height{
@@ -54,9 +54,6 @@ background-color: #02ab9d;
 color: white;
 }
 
-.w-100-px {
-    margin-left: 100px !important;
-}
 .logo-full,
 .logo-collapsed {
     transition: opacity 0.3s ease;
@@ -66,4 +63,14 @@ color: white;
 .logo-collapsed.hidden {
     opacity: 0;
     visibility: hidden;
+}
+
+.w-100-px {
+    margin-left: 140px !important;
+    margin-right: 20px;
+}
+
+.w-base {
+    margin-left: 20px;
+    margin-right: 20px;
 }

@@ -70,9 +70,12 @@ to {
     justify-content: center;
 }
 
-.sidebar.active .sidbar-member {
+.sidbar-member {
     padding-left: 0;
     padding-right: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .sidebar.active .sidbar-member .sidbar-member-inner {
@@ -138,4 +141,23 @@ to {
   }  
   .sidbar-member-collapsed{
     padding:0px !important;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .logo-main-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .w-50 {
+    width: 50% !important;
+    margin-bottom: 50px;
+  }
+
+  .w-30 {
+    width: 30% !important
   }

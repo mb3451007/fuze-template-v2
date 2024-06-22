@@ -65,7 +65,7 @@ export class DenseLayoutComponent implements OnInit, OnDestroy
             type: 'basic',
             link: '/archivio',
             icon: 'archivio' ,
-            exactMatch: true,
+            exactMatch: true
         },
         {
             id: 'workspace',

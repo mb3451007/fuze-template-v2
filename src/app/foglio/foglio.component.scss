@@ -1,6 +1,6 @@
-ejs-spreadsheet {
-    padding-right: 1.3em;
-}
+// ejs-spreadsheet {
+//     padding-right: 1.3em;
+// }
 ::ng-deep {
 
     .e-tab-header {
@@ -108,4 +108,11 @@ ejs-spreadsheet {
       }
       
 
+}
+
+.main-div {
+    display: grid;
+    width: 100%;
+    // margin-left: 35px;
+    // margin-right: 14px;
 }
